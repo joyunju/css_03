@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>float 문제점</title>
+	<style>
+		/* clearfix */
+		.clearfix{
+			*zoom:1;
+		}
+		.clearfix:before, .clearfix:after {
+			display: block;
+			content: "";
+			line-height: 0;
+		}
+		.clearfix:after {
+			clear: both;
+		}
+		
+		
+		.box-gray {
+			background-color : #C0C0C0;
+			width : 600px;
+			
+			
+			/* border-radius : 30px; */
+		}
+		.box-blue {
+			background-color : #6495ED;
+			width : 250px;
+			height : 250px;
+			float : left;
+		}
+		.box-green {
+			background-color : #BDB76B;
+			height : 250px;
+			width : 250px;
+			float : left;
+		}
+		.box-red {
+			background-color : #CD5C5C;
+			width : 600px;
+			height : 100px;
+		}
+	
+	
+	
+	</style>
+	</head>
+	<body>
+		<div class="clearfix box-gray">box-gray
+			<div class="box-blue">box-blue</div>
+			<div class="box-green">box-green</div>
+		</div>
+		<div class="box-red">box-red</div>
+	</body>
+</html>
